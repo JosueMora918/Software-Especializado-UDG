@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Formularios Web</title>
+</head>
+<body style="background-color: black;"><div style="width: 50%; margin:auto;">
+  <!-- Código para el FORMULARIO WEB -->
+  <form action="grabardatos.php" method="post" style="background-color: lightgray;">
+    <fieldset>
+      <legend>Datos solicitados:</legend>
+      Nombre: <br> <img src="https://shorturl.at/sP8X9" alt="Leones" style="float:right;">
+      <!-- Código para Caja de Texto (TextBox) -->
+      <input type="text" name="txt_nombre" size="50"><br>
+      Paterno: <br>
+      <!-- Código para Caja de Texto (TextBox) -->
+      <input type="text" name="txt_paterno" size="50">
+      <br>
+      <br>CARRERAS<br>
+      <!-- Código para botones tipo radio (radio button) -->
+      <input type="radio" name="rb_carrera" value="TUR"> Turismo<br>
+      <input type="radio" name="rb_carrera" value="MEC"> Mecatrónica
+      <br><br>
+      <!-- Código para Caja de Selección o ComboBox -->
+      TURNO:
+      <select name="turno">
+        <!-- Cada opción de la caja de selección lleva un option -->
+        <option value="0">Selecciona un turno</option>
+        <option value="M">Matutino</option>
+        <option value="V">Vespertino</option>
+        <option value="WEB">En línea</option>
+      </select><br><br>
+      TRANSPORTE A LA ESCUELA <br>
+      <!-- Código para Check Box -->
+      <input type="checkbox" name="transporte1" value="Bici">Bicicleta<br>
+      <input type="checkbox" name="transporte2" value="Auto">Automóvil
+      <br><br>
+
+      COMENTARIO: <br>
+      <!-- Código para una caja de texto multilínea -->
+      <textarea name="txt_comentario" rows="3" cols="50">
+Escribe aquí tu comentario
+      </textarea>
+      <br><br>
+      <!-- Código para botón de comando -->
+      <input type="submit" value="..:: Grabar datos ::.. ">
+    </fieldset>
+  </form> </div>
+</body>
+</html>

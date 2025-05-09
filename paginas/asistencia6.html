@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio HTML sobre semántica y multimedia</title>
+</head>
+<body>
+
+<!-- Encabezado -->
+<header>
+  <h1>Ejercicio HTML sobre semántica y multimedia</h1>
+</header>
+
+<!-- Navegación -->
+<nav>
+  <ul>
+    <li><a href="#">Boton vacio</a></li>
+    <li><a href="/paginas/asistencia5.html">Boton no vacio</a></li>
+    <li><a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Boton</a></li>
+  </ul>
+</nav>
+
+<!-- Sección principal -->
+<section>
+
+  <!-- Primer artículo con video en formato OGV -->
+  <article>
+    <h2>Video en formato OGV</h2>
+    <video controls width="600">
+      <!-- Lo puse en WEBM porque mi navegador no soporta OGV, ni Edge,
+      ni Chrome ni Firefox y para que arriesgarse me cae-->
+      <source src="../multimedia/mhrise.webm" type="video/webm"
+      Tu navegador no soporta el formato de video.
+    </video>
+  </article>
+
+  <!-- Segundo artículo con audio en otro formato que no sea MP3 -->
+  <article>
+    <h2>Audio en formato permitido</h2>
+    <audio controls>
+      <source src="../multimedia/sample4.ogg" type="audio/ogg"> <br>
+      Tu navegador no soporta el formato de audio.
+    </audio>
+  </article>
+
+  <!-- Tercer artículo con video incrustado de YouTube -->
+  <article id="video-embed">
+    <h2>Video de YouTube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NlgtBYOfEu0?si=n0A22JlH_548Od_K" frameborder="0" allowfullscreen></iframe> <br>
+  </article>
+</section>
+
+<aside>
+  <h2>Imagen Relacionada</h2>
+  <img src="../multimedia/joker.png" alt="Imagen relacionada" width="180">
+</aside>
+
+<footer> <h1>JOSUE EMMANUEL MORA PRADO</h1> </footer>
+</body>
+</html>

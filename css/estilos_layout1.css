@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+.contenedor {
+  position: relative;
+  display: grid;
+  width: 960px;
+  background-color: navy;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 200px 50px 320px 400px 100px;
+  grid-template-areas:
+        "banner banner banner"
+        "navegacion navegacion navegacion"
+        "bienvenida bienvenida bienvenida"
+        "bloque1 bloque2 bloque3"
+        "pie pie pie";
+  gap: 5px;
+}
+
+.titulo-contenedor {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 18px;
+  background-color: navy;
+  padding: 5px 440px;
+}
+
+
+.banner {
+  grid-area: banner;
+  background-color: #cccccc;
+  text-align: center;
+  line-height: 200px;
+}
+
+.navegacion {
+  grid-area: navegacion;
+  background-color: #fde59a;
+  text-align: left;
+  line-height: 50px;
+}
+
+.bienvenida {
+  grid-area: bienvenida;
+  background-color: #7596ff;
+  text-align: center;
+  line-height: 320px;
+}
+
+.bloque1, .bloque2, .bloque3 {
+  background-color: #aaaaaa;
+  text-align: center;
+  line-height: 400px;
+}
+
+.bloque1 { grid-area: bloque1; }
+.bloque2 { grid-area: bloque2; }
+.bloque3 { grid-area: bloque3; }
+
+.pie {
+  grid-area: pie;
+  background-color: #ff7f00;
+  text-align: center;
+  line-height: 100px;
+}

@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.logo {
+  width: 20%;
+  background: linear-gradient(to right, red, darkred);
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px 0 0 0;
+  height: 100px;
+}
+
+.heading {
+  width: 80%;
+  background: linear-gradient(to right, green, darkgreen);
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 15px 0 0;
+  color: white;
+}
+
+.menu {
+  background: linear-gradient(to bottom, yellow, gold);
+  padding: 15px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.secciones {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  height: 150px;
+}
+
+.seccion {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  color: white;
+}
+
+#section1 {
+  background: linear-gradient(to bottom, blue, navy);
+}
+
+#section2 {
+  background: linear-gradient(to bottom, gray, black);
+}
+
+#section3 {
+  background: linear-gradient(to bottom, plum, purple);
+}
+
+main {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.contenido {
+  flex: 3;
+  background: linear-gradient(to right, turquoise, cyan);
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  height: 400px;
+}
+
+.sidebar {
+  flex: 1;
+  background: linear-gradient(to bottom, olive, darkolivegreen);
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+footer {
+  background: linear-gradient(to right, lightblue, steelblue);
+  padding: 15px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+}

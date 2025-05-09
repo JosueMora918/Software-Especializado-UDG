@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicio de IF Anidado</title>
+  <script>
+    // Preguntar al usuario la hora (solo número entre 0 y 24)
+    let hora = prompt("¿Qué hora es? (Solo número del 0 al 24)");
+
+    // Verificar si el valor ingresado es un número
+    if (!isNaN(hora)) {
+      // Convertir el valor a número (ya que prompt devuelve texto)
+      hora = Number(hora);
+
+      // Verificar que esté en el rango de 0 a 24
+      if (hora >= 0 && hora <= 24) {
+
+        // Evaluar diferentes rangos horarios
+        if (hora > 1 && hora < 6) {
+          alert("¡Buenas Madrugadas!");
+        } else if (hora > 6 && hora < 12) {
+          alert("Muy buenos días");
+        } else if (hora === 12) {
+          alert("Ya es medio día");
+        } else if (hora > 12 && hora < 19) {
+          alert("Muy buenas tardes");
+        } else if (hora > 19 && hora < 24) {
+          alert("Buenas noches");
+        } else {
+          alert("Hora fuera de los rangos especificados para saludar.");
+        } //No deberia ser mayor o igual a 0 para las madrugadas?
+
+      } else {
+        alert("Lo que escribiste sí es un número, pero favor de escribir un número entre 0 y 24");
+      }
+    } else {
+      alert("Lo que escribiste no es un número, favor de escribir un número entre 0 y 24");
+    }
+
+    // Mensaje final con tu nombre
+    alert("Este ejercicio se programó con JavaScript y lo codificó: Josue Emmanuel Mora Prado");
+  </script>
+</head>
+<body>
+</body>
+</html>

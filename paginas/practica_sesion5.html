@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Videojuego</title>
+</head>
+
+<body>
+
+<h2>Formulario de Captura de Videojuego</h2>
+
+<!-- Formulario -->
+<form method="post" action="grabar_videojuego.php" id="formulario1">
+  <fieldset>
+    <legend>Formulario de captura de videojuegos</legend>
+
+    <!-- Caja de Texto para el título del videojuego -->
+    <label for="txt_titulo">Título del videojuego:</label><br>
+    <input type="text" id="txt_titulo" name="txt_titulo" value="" required>
+    <br><br>
+
+    <!-- Caja de selección para la consola -->
+    <label for="cb_consola">Selecciona la consola:</label><br>
+    <select id="cb_consola" name="cb_consola" required>
+      <option value="">Selecciona una consola</option>
+      <option value="PS5">PlayStation 5</option>
+      <option value="XBOX">Xbox</option>
+      <option value="PC">PC</option>
+      <option value="SWITCH">Nintendo Switch</option>
+    </select>
+    <br><br>
+
+    <!-- Caja de texto para el precio del videojuego -->
+    <label for="txt_precio">Precio del videojuego:</label><br>
+    <input type="text" id="txt_precio" name="txt_precio" value="" required>
+    <br><br>
+
+    <!-- Caja de selección para cómo se enteraron de la venta -->
+    <label for="cb_fuente">¿Cómo te enteraste de la venta?</label><br>
+    <select id="cb_fuente" name="cb_fuente" required>
+      <option value="">Selecciona una opción</option>
+      <option value="redes_sociales">Redes Sociales</option>
+      <option value="publicidad">Publicidad</option>
+      <option value="amigos">Amigos</option>
+      <option value="tienda">Tienda Física</option>
+    </select>
+    <br><br>
+
+    <!-- Botón de tipo Submit -->
+    <input type="submit" value="Grabar datos del Videojuego">
+  </fieldset>
+</form>
+
+<!-- Nombre Completo -->
+<h1>Josué Emmanuel Mora Prado</h1>
+
+</body>
+</html>

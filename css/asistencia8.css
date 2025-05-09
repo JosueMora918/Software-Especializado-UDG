@@ -1,0 +1,34 @@
+/* Estilos para el párrafo */
+#textos {
+  border-bottom: 5px solid blue;
+  padding: 10px;
+}
+
+/* Estilos para el div */
+#cajita {
+  border-left: 10px solid red;
+  border-right: 10px solid red;
+  margin-bottom: 5px;
+}
+
+/* Estilos para la liga */
+a {
+  background-color: lightgray;
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para la tabla */
+#tablita {
+  border: 2px solid pink;
+  border-collapse: collapse;
+}
+
+#tablita td {
+  padding: 10px;
+  border: 2px solid pink;
+}

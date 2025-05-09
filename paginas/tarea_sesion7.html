@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica de la sesión 7</title>
+  <!-- Etiqueta para enlazar este HTML con su archivo CSS -->
+  <link href="../css/estilos_cascada_sesion7.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+<body style="background-color: black;">
+<div style="width:60%; margin:auto; background-color:darkgray;">
+  <fieldset>
+    <legend>Práctica de HTML con formato de CSS</legend>
+
+    <h2 id="titulo_practica_7">Elementos Multimedia en páginas web y con estilos CSS</h2>
+    <img src="https://shorturl.at/5N3Rd" alt="Leones" style="float:right; width:320px; height:260px;">
+
+    <p>Los archivos de video deben ser MP4 y los archivos de audio deben ser OGG, puedes descargar videos y audios desde Youtube, hay programas para descargar audios y videos desde youtube pero debes asegurarte de que antes de subirlos al hosting tengan el formato correctamente, el convertidor que se usó para el audio y video de este ejercicio es:
+      <a href="https://www.online-convert.com/es" target="_blank">Convertidor de audios a OGG y videos a MP4</a></p>
+
+    <p>Los archivos multimedia se deben subir al hosting a la carpeta /multimedia y este archivo HTML debe ir en la subcarpeta /paginas</p>
+    <div id="seccion_lista" class="division_listado">
+      <link rel="stylesheet" href="../css/estilos_cascada_sesion7.css">
+    <h3>Lista de enlaces con viñetas usando listado</h3>
+    <ul>
+      <li><a href="http://www.valles.udg.mx/" target="_blank">CUValles</a></li>
+      <li><a href="http://www.cucei.udg.mx/" target="_blank">CUCEI</a></li>
+      <li><a href="https://www.cucea.udg.mx/" target="_blank">CUCEA</a></li>
+      <li><a href="http://www.cusha.udg.mx/" target="_blank">CUSHA</a></li>
+      <li><a href="http://www.cutonala.udg.mx/" target="_blank">CUTonala</a></li>
+      <li><a href="https://cuapos.udg.mx/" target="_blank">CUAPOS</a></li>
+      <li><a href="https://cuaad.udg.mx/" target="_blank">CUAAD</a></li>
+    </ul>
+    </div>
+
+    <div style="position:relative;">
+      <!-- Código para colocar el AUDIO en el hosting -->
+      <h3>El siguiente control reproduce un audio en formato OGG</h3>
+      <audio controls style="position:relative; margin:auto; width:100%;">
+        <source src="../multimedia/fart_reverb.ogg" type="audio/ogg">
+        <source src="../multimedia/beethoven.mp3" type="audio/mpeg">
+        Tu navegador no soporta audios de HTML
+      </audio>
+    </div>
+
+    <br>
+
+    <div style="position:relative;">
+      <!-- Código para colocar el VIDEO en el hosting -->
+      <h3>El siguiente control reproduce un video en formato MP4</h3>
+      <video width="360" height="260" controls style="border: 2px solid #000000; border-radius: 20px;">
+        <source src="../multimedia/mhrise.webm" type="video/mp4">
+        <source src="../multimedia/rotacion.ogg" type="video/ogg">
+        Tu navegador no soporta videos de HTML
+      </video>
+    </div>
+
+    <img src="https://shorturl.at/5N3Rd" alt="Leones" style="float:right; width:320px; height:260px;">
+
+    <iframe width="360" height="260" src="https://www.youtube.com/embed/LXb3EKWsInQ?si=08R5ExCbbu0vxRj-"
+            style="border: 2px solid #000000;"
+            title="Reproductor de videos de Youtube" allowfullscreen>
+    </iframe>
+
+
+    <div class="division_tabla">
+      <table>
+        <thead>
+        <tr>
+          <th>Materia</th>
+          <th>Profesor</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Programación Orientada a Objetos</td>
+          <td>Óliva Ibarra Francisco Eduardo</td>
+        </tr>
+        <tr>
+          <td>Redes de Computadoras</td>
+          <td>Vega Tapia Abraham</td>
+        </tr>
+        <tr>
+          <td>Base de Datos</td>
+          <td>Antonio Alvarado Hernández del Carmen</td>
+        </tr>
+        <tr>
+          <td>Gestión de Servicios y Procesos de TI</td>
+          <td>Ramírez Torres Miguel Ángel</td>
+        </tr>
+        <tr>
+          <td>Ingeniería de Software</td>
+          <td>Ramírez Torres Miguel Ángel</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="position:relative;"></div>
+
+    <h2 id="titulo_tabla_datos">Tabla de datos con estilos CSS</h2>
+    <!-- Tabla con estilos CSS -->
+    <div id="seccion_tabla" class="division_tabla">
+      <table class="tabla_datos">
+        <tr>
+          <th>Materia</th>
+          <th>Profesor</th>
+        </tr>
+        <tr>
+          <td>Programación Orientada a Objetos</td>
+          <td>Olvera Brian Francisco Eduardo</td>
+        </tr>
+        <tr>
+          <td>Topografía</td>
+          <td>Ávalos López Luis Eduardo</td>
+        </tr>
+        <tr>
+          <td>Estática y Taller Especializado</td>
+          <td>Trujillo Abraham</td>
+        </tr>
+        <tr>
+          <td>Matemáticas Avanzadas</td>
+          <td>Velázquez Abraham de Carmen</td>
+        </tr>
+        <tr>
+          <td>Gestión de Servicios y Procesos de Tecnologías de la Información II</td>
+          <td>Ramírez Torres Miguel Ángel</td>
+        </tr>
+        <tr>
+          <td>Ingeniería de Software</td>
+          <td>Ramírez Torres Miguel Ángel</td>
+        </tr>
+      </table>
+    </div>
+
+    <br>
+    <hr class="linea_horizontal">
+    <h2 id="autor">Autor: Josue Emmanuel Mora Prado</h2>
+  </fieldset>
+</div>
+</body>
+</html>

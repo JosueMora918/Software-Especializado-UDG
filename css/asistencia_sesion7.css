@@ -1,0 +1,55 @@
+h1 {
+  color: blue;
+}
+
+p {
+  color: gray; /* Gris oscuro */
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none; /* Oculta las viñetas */
+}
+
+hr {
+  width: 50%;
+  border: 2px solid red;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: dimgray; /* Gris oscuro */
+  color: white;
+  padding: 10px;
+}
+
+td {
+  background-color: yellow; /* Amarillo claro */
+  color: blue;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+/* Estilos para el formulario */
+input[type="text"] {
+  color: red;
+}
+
+select {
+  color: blue;
+}
+
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}

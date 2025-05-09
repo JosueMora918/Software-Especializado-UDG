@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#contenedor {
+  width: 960px;
+  display: grid;
+  grid-template-areas:
+    "banner"
+    "navegacion"
+    "bienvenida"
+    "bloques"
+    "pie";
+  grid-gap: 10px;
+  background-color: #000;
+  color: black;
+}
+
+#banner {
+  grid-area: banner;
+  height: 100px;
+  background: url('../imagenes/Leones_Negros.png') no-repeat left center;
+  background-size: contain;
+  background-color: #ccc;
+  box-shadow: 5px 5px 10px red;
+  padding-left: 120px;
+  line-height: 50px;
+  font-weight: bold;
+  color: black;
+  overflow: hidden;
+  position: relative;
+}
+
+#navegacion {
+  grid-area: navegacion;
+  height: 50px;
+  background-color: black;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+#bienvenida {
+  grid-area: bienvenida;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  background-color: orange;
+  padding: 10px;
+}
+
+.camisa-izq {
+  height: 200px;
+  background: url('../imagenes/camisa_chivas.jpg') no-repeat center;
+  background-size: contain;
+}
+
+.camisa-der {
+  height: 200px;
+  background: url('../imagenes/camisa_leonesnegros.png') no-repeat center;
+  background-size: contain;
+}
+
+.texto-bienvenida {
+  text-align: center;
+  font-weight: bold;
+}
+
+#bloques {
+  grid-area: bloques;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+#bloque1, #bloque2, #bloque3 {
+  height: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bloque1 {
+  background: linear-gradient(white, orange);
+}
+
+#bloque2 {
+  background: linear-gradient(white, yellow);
+}
+
+#bloque3 {
+  background: linear-gradient(white, skyblue);
+}
+
+#pie {
+  grid-area: pie;
+  height: 50px;
+  background-color: rebeccapurple;
+  box-shadow: 5px 5px 10px lightgray;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+

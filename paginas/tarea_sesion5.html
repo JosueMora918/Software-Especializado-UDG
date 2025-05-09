@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Video y Audio en HTML</title>
+</head>
+<body style="background-color: black;">
+
+<div style="width:60%; margin:auto; background-color:darkgray;">
+  <fieldset>
+    <legend>Práctica de elementos MULTIMEDIA en páginas web</legend>
+    <h2>Elementos Multimedia en páginas web</h2>
+
+    <img src="https://shorturl.at/Daa0K" alt="Leones" style="float:right; width:320px; height:260px;">
+
+    <p>Los archivos de video deben ser MP4 y los archivos de audio deben ser OGG, puedes descargar videos y audios desde Youtube, hay páginas web en Internet que te permiten descargar audios y videos desde youtube pero debes asegurarte que antes de subirlos al hosting los debes convertir al formato correcto que yo usé para el video y audio de este ejercicio es:
+      <a href="https://www.online-convert.com/es" target="_blank">Convertidor de audios a OGG y videos a MP4</a></p>
+
+    <p>Los archivos multimedia se deben subir al hosting a la carpeta /multimedia y este archivo HTML debe ir en la subcarpeta /paginas</p>
+
+    <div style="position:relative;">
+      <!-- Código para el AUDIO en el hosting -->
+      <h3>El siguiente control reproduce un audio en formato OGG</h3>
+      <audio controls style="float:left; margin:auto;">
+        <source src="../multimedia/fastest.ogg" type="audio/ogg">
+        <source src="../multimedia/beethoven.mp3" type="audio/mpeg">
+        Tu navegador no soporta audios de HTML
+      </audio>
+    </div> <br> 
+
+    <div style="position:relative;">
+      <!-- Código para el VIDEO en el hosting -->
+      <h3>El siguiente control reproduce un video en formato MP4</h3>
+      <video width="640" height="360" controls style="border:solid 2px #000000;">
+        <source src="../multimedia/extasis.mp4" type="video/mp4">
+        <source src="../multimedia/rotacion.ogg" type="video/ogg">
+        Tu navegador no soporta videos de HTML
+      </video>
+    </div> <br> 
+
+    <img src="https://shorturl.at/Daa0K" alt="Leones" style="float:right; width:320px; height:260px;">
+
+    <div style="position:relative;">
+      <!-- Código para el VIDEO en YOUTUBE -->
+      <h3>El siguiente control reproduce un video que está en YOUTUBE</h3>
+      <iframe width="640" height="360"
+              src="https://www.youtube.com/embed/fTvpU7ahimw?si=_o2ybea_o9FKP23P"
+              style="border:solid; border-width:2px; border-color:#000000;"
+              title="Reproductor de videos de Youtube"
+              allowfullscreen>
+      </iframe>
+    </div> <br> 
+
+    <h2>Autor: Josue Emmanuel Mora Prado</h2>
+  </fieldset>
+</div> <br> 
+
+</body>
+</html>

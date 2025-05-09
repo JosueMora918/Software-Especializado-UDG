@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Mortal Kombat</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .contenedor {
+      width: 100%;
+      display: flex;
+    }
+
+    #Mortal {
+      width: 30%;
+      background-color: #d63031; /* Rojo */
+      float: left;
+      height: 100vh;
+    }
+
+    #Kombat {
+      width: 70%;
+      background-color: #0984e3; /* Azul */
+      float: left;
+      height: 100vh;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    form label {
+      margin-right: 10px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    form input[type="text"] {
+      padding: 5px;
+    }
+
+    form input[type="submit"] {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #00b894;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+
+  <script>
+    function valida_numeros() {
+      event.preventDefault(); // Para evitar que se recargue la página
+      let numerodesconocido = document.getElementById("texto_caja1").value;
+
+      if (isNaN(numerodesconocido)) {
+        alert("Favor de escribir un número entero entre 1 y 20");
+      } else {
+        numerodesconocido = parseInt(numerodesconocido);
+        if (numerodesconocido >= 1 && numerodesconocido <= 20) {
+          for (let i = 1; i <= numerodesconocido; i++) {
+            document.write("Esta es la vez número " + i + " que se ejecuta el FOR<br>");
+          }
+        } else {
+          alert("Favor de escribir en la caja de texto un valor entre 1 y 20");
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div id="Mortal">
+    <!-- Contenido adicional opcional -->
+  </div>
+
+  <div id="Kombat">
+    <form id="frm_tarea_for_js" onsubmit="valida_numeros()">
+      <label for="texto_caja1">Escribe un número del 1 al 20</label>
+      <input type="text" id="texto_caja1" />
+      <br><br>
+      <input type="submit" id="boton_exec" value="EJECUTAR ESTE FORMULARIO" />
+    </form>
+  </div>
+</div>
+</body>
+</html>

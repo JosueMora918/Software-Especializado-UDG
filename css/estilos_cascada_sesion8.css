@@ -1,0 +1,170 @@
+/* ESTILOS ES CASCADA PARA LA SESION 8 - SOFTWARE ESPECIALIZADO */
+/* Josue Emmanuel Mora Prado */
+
+body {
+  background-color: black;
+}
+
+#principal {
+  width: 55%;
+  margin: auto;
+  background-color: darkgray;
+}
+
+#titulo_practica_8 {
+  text-align: right;
+  /* Modelo de Caja */
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  background-image: linear-gradient(#e8e8e8 60%, #33caff);
+}
+
+/* PARA EL DISEÑO DE LOS LINKS EN LA PÁGINA WEB */
+
+/* Enlace que aún no has visitado */
+a:link {
+  color: blue;
+  /* Esto sirve para quitar el subrayado de los links */
+  text-decoration: none;
+}
+
+/* Pasa el mouse sobre el enlace y le agrega el clásico subrayado */
+a:hover {
+  color: purple;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.division_listado {
+  background-color: #33caff;
+  height: 150px;
+}
+
+#lista_centros_univ {
+  list-style-type: none;
+}
+
+/* Para mostrar la lista de links en formato horizontal y sin viñeta */
+#lista_centros_univ li {
+  list-style-type: none;
+  background-color: #FE6C3A;
+  /* Modelo de Caja */
+  border: #7D1CB8 2px solid;
+  display: inline;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+#oculto {
+  /* Para ocultar un elemento de la página web */
+  visibility: hidden;
+}
+
+#imagen1 {
+  /* Para "acomodar" la imagen hacia la izquierda */
+  float: left;
+  width: 320px;
+  height: 260px;
+}
+
+#div_audio {
+  position: relative;
+}
+
+#div_video1 {
+  /* Para ubicar el video hacia la izquierda */
+  float: left;
+  width: 645px;
+  height: 365px;
+  background-color: black;
+}
+
+#imagen2 {
+  /* Para ubicar la 2da imagen hacia la derecha */
+  width: 320px;
+  height: 260px;
+  clear: both;
+  float: right;
+}
+
+#seccion_texto_derecha {
+  /* Texto a la derecha del video de Youtube */
+  background-color: #e3e4e7;
+  width: 330px;
+  float: right;
+  clear: both;
+  text-align: justify;
+  font-size: 16px;
+  font-family: "Sofia", sans-serif;
+  /* Modelo de Caja */
+  padding: 10px;
+  padding-bottom: 10px;
+  margin: 20px;
+}
+
+#div_video2 {
+  /* Video hacia la izquierda del texto */
+  float: left;
+  width: 645px;
+  height: 380px;
+  background-color: darkgray;
+}
+
+/* PARA MAQUETAR LA TABLA DE DATOS DE LAS MATERIAS */
+
+#titulo_tabla_datos {
+  clear: both;
+  background: #e8e8e8;
+  text-align: right;
+  /* Modelo de Caja */
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.division_tabla {
+  background-color: #CCCCCC;
+  color: #000080;
+  text-align: center;
+}
+
+.tabla_datos {
+  text-align: left;
+}
+
+th {
+  background-color: #666666;
+  text-align: center;
+  color: #FFFFFF;
+  /* Modelo de Caja */
+  border: 3px;
+  padding: 8px;
+}
+
+td {
+  /* Modelo de Caja */
+  padding: 8px;
+}
+
+.par {
+  background-color: #ACE4F7;
+}
+
+.impar {
+  background-color: #FFFFFF;
+}
+
+#autor {
+  background-image: linear-gradient(#000000 40%, #ffffff);
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 2px 2px gray;
+  border-radius: 10px;
+  /* Modelo de Caja */
+  border: 1px solid white;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+

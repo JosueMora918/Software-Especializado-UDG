@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Practica de la sesion 8</title>
+
+  <!-- Etiqueta para enlazar este HTML con su archivo CSS -->
+  <link href="../css/estilos_cascada_sesion8.css" rel="stylesheet" type="text/css" media="screen">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+
+<body>
+
+<div id="principal">
+  <fieldset>
+    <legend>Modelo de Caja con CSS</legend>
+
+    <h2 id="titulo_practica_8">Modelo de Caja con estilos de CSS</h2>
+
+    <img src="https://shorturl.at/5N3Rd" alt="Leones" id="imagen1">
+
+    <p>
+      Los archivos de video deben ser MP4 y los archivos de audio deben ser OGG, puedes descargar videos y audios desde Youtube, hay varias webs en Internet que te permiten descargar audios y videos desde youtube pero debes asegurarte que antes de subirlos al hosting tengan la extensión correspondiente, tal convertidor que se usa para videos y que además es gratuito es:
+      <a href="http://www.online-convert.com/es" target="_blank">Convertidor de audios OGG y videos a MP4</a>
+    </p>
+
+    <p>Los archivos multimedia se deben subir al hosting a la carpeta /multimedia y este archivo HTML debe ir en la subcarpeta /paginas/</p>
+
+    <div id="seccion_lista" class="division_listado">
+      <ul id="lista_centros_univ">
+        <li><a href="http://www.cuvalles.udg.mx/" target="_blank">CUValles</a></li>
+        <li><a href="http://www.cucei.udg.mx/" target="_blank">CUCEI</a></li>
+        <li><a href="http://www.cucs.udg.mx/" target="_blank">CUCS</a></li>
+        <li><a href="http://www.cutonala.udg.mx/" target="_blank">CUTonalá</a></li>
+        <li><a href="http://www.lagos.udg.mx/" target="_blank">CULagos</a></li>
+        <li id="oculto"><a href="https://cuad.udg.mx/" target="_blank">CUAAD</a></li>
+      </ul>
+    </div>
+
+    <div id="div_audio">
+      <h3> Código para el AUDIO en el hosting </h3>
+      <p>Este control reproduce un audio en formato OGG</p>
+      <audio controls style="float:left; margin:auto; width:100%;">
+        <source src="../multimedia/fart_reverb.ogg" type="audio/ogg">
+        <source src="../multimedia/rotacion.ogg" type="audio/mpeg">
+        Tu navegador no soporta audios de HTML
+      </audio>
+    </div>
+
+    <br><br>
+
+    <div id="imagen_derecha">
+      <img src="https://shorturl.at/5N3Rd" alt="Leones" id="imagen2">
+    </div>
+
+    <h3>El siguiente control reproduce un video en formato MP4</h3>
+    <div id="video1">
+      <video width="640" height="360" controls style="border:solid 2px #000000;">
+        <source src="../multimedia/mhrise.webm" type="video/mp4">
+        <source src="../multimedia/rotacion.ogg" type="video/ogg">
+        Tu navegador no soporta videos de HTML
+      </video>
+    </div>
+
+    <div id="seccion_texto_derecha" class="division_texto">
+      <h3> El modelo de cajas de CSS </h3>
+      <p>En CSS, todos los objetos son considerados CAJAS.</p>
+      <p>
+        The CSS box model is essentially a box that wraps around every HTML element.
+        It consists of: content, padding, borders, and margins.
+      </p>
+      <p>
+        The box model allows us to add a border around elements, and to define space between elements.
+      </p>
+    </div>
+
+    <h3>El siguiente control reproduce un video que ya está en YOUTUBE</h3>
+    <div id="video2">
+      <h3>Código para el video en YOUTUBE</h3>
+      <iframe width="640" height="360"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=ZTVj1rwG_pXS6Ofe"
+              allowfullscreen title="Reproductor de videos de Youtube">
+      </iframe>
+    </div>
+
+    <h2 id="titulo_tabla_datos">Tabla de datos con estilos CSS</h2>
+
+    <h3>Tabla con estilos CSS</h3>
+    <div id="seccion_tabla" class="division_tabla">
+      <table class="tabla_datos">
+        <tr>
+          <th>Materia</th>
+          <th>Profesor</th>
+        </tr>
+        <tr class="par">
+          <td>Programación Orientada a Objetos</td>
+          <td>Abraham Francisco Eduardo</td>
+        </tr>
+        <tr class="impar">
+          <td>Software Especializados</td>
+          <td>Vega Tapia Abraham</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="linea_horizontal"></div>
+    <p id="autor">Autor: Josue Emmanuel Mora Prado</p>
+
+    <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Válido">
+  </fieldset>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+/* Estilos en cascada para el Modelo de Cajas */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#lista1 {
+    background-color: yellow;
+    padding: 10px; /* Espaciado alrededor del objeto */
+    padding-left: 30px;
+
+    border-left-color: blue; /* Borde IZQUIERDO del objeto */
+    border-left-style: solid;
+    border-left-width: 10px;
+
+    border-right-color: red;
+    border-right-style: solid;
+    border-right-width: 10px;
+	border-top-style: dashed;
+	border-bottom-style: dashed;
+    margin-bottom: 10px;
+}
+
+#lista2 {
+    background-color: orange;
+
+    border-bottom-color: red;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+	border-top-style: dotted;
+	border-left-style: dotted;
+	border-right-style: dotted;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 40px;
+}
+
+#division1 {
+  width: 200px;
+  height: 50px;
+  /* Modelo de cajas */
+  border: 15px outset green; /* Border alrededor del contenido */
+  padding: 50px; /* Espacio alrededor del contenido */
+  margin: 20px; /* Espacio despues del borde */
+}

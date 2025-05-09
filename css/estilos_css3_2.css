@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000033;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#contenedor {
+  display: grid;
+  grid-template-areas:
+    "banner banner"
+    "navegacion navegacion"
+    "menu migajas"
+    "menu contenido"
+    "pie pie";
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 80px 50px 30px 1fr 50px;
+  width: 960px;
+  background-color: white;
+}
+
+
+#banner {
+  grid-area: banner;
+  height: 80px;
+  background: #f26522 url('../imagenes/escudo_UdeG.png') no-repeat center center;
+  background-size: contain;
+  box-shadow: 0 -5px 10px gold;
+  color: black;
+  font-weight: bold;
+  line-height: 80px;
+  text-align: right;
+}
+
+#navegacion {
+  grid-area: navegacion;
+  height: 50px;
+  background-color: #003366;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}
+
+#menu {
+  grid-area: menu;
+  height: 500px;
+  background: linear-gradient(to right, orange, white);
+  box-shadow: 5px 5px 10px orange;
+  color: black;
+  text-align: center;
+  line-height: 500px;
+  font-weight: bold;
+  min-height: 400px;
+}
+
+#migajas {
+  grid-area: migajas;
+  height: 30px;
+  background-color: #ffcc00;
+  border-top-right-radius: 10px;
+  color: black;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#contenido {
+  grid-area: contenido;
+  background: linear-gradient(to bottom, lightgray, white);
+  border-radius: 15px;
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.imagen-contenido {
+  float: right;
+  width: 200px;
+  border-radius: 10px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+
+#pie {
+  grid-area: pie;
+  height: 50px;
+  background-color: violet;
+  box-shadow: 0 5px 10px white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+}

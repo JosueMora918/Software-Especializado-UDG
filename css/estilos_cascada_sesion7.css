@@ -1,0 +1,74 @@
+#titulo_practica_7 {
+  background:#e8e8c8;
+  text-align:right;
+  border: 32px;
+}
+
+.division_listado {
+  background-color: lightblue; /* Fondo azul claro */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.division_listado ul {
+  list-style: none; /* Elimina las viñetas predeterminadas */
+  padding-left: 20px; /* Ajusta el espaciado izquierdo */
+}
+
+.division_listado ul li {
+  background: url('../imagenes/whatsapp_icon.gif') no-repeat left center; /* Usa la imagen como viñeta */
+  background-size: 10px 10px; /* Ajusta el tamaño de la imagen */
+  padding-left: 20px; /* Espaciado para evitar que el texto sobrepase la imagen */
+  margin-bottom: 5px; /* Espaciado entre elementos */
+}
+
+/* Quitar el subrayado de los enlaces por defecto */
+.division_listado ul li a {
+  text-decoration: none;
+  color: black; /* Color normal del enlace */
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+/* Subrayar solo cuando el puntero pase por encima */
+.division_listado ul li a:hover {
+  text-decoration: underline;
+}
+
+.division_tabla {
+  background-color: lightgray; /* Fondo gris claro para el div */
+  padding: 15px;
+  text-align: center;
+}
+
+#titulo_tabla_datos {
+  background:#e8e8c8;
+  text-align:right;
+  border: 32px;
+}
+
+.division_tabla table {
+  width: 80%; /* Ancho del 80% del contenedor */
+  border-collapse: collapse;
+  margin: 0 auto; /* Centrar la tabla */
+  border: 3px solid navy; /* Borde azul marino de 3px */
+}
+
+.division_tabla th {
+  background-color: dimgray; /* Encabezados con gris fuerte */
+  color: white;
+  padding: 10px;
+  border: 3px solid navy; /* Borde azul marino */
+}
+
+.division_tabla td {
+  padding: 10px;
+  border: 3px solid navy; /* Borde azul marino */
+}
+
+.division_tabla tbody tr:nth-child(odd) {
+  background-color: white; /* Filas nones blancas */
+}
+
+.division_tabla tbody tr:nth-child(even) {
+  background-color: lightblue; /* Filas pares azul claro */
+}

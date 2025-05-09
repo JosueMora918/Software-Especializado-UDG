@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* Estilos CSS programados por Omar Figueroa */
+/* Para la Práctica de Sombras, Esquinas Redondeadas, Desvanecidos y Tipos de Letra*/
+*{margin:0;padding:0;}
+
+
+#contenedor{
+  /*Para redondear las esquinas*/
+  border-radius:20px;
+
+  display: grid;
+  outline: 5px solid black;
+  text-align:center;
+  width:960px;
+  background-color:#ff962c;
+  grid-template-columns:repeat(3, 1fr);
+  grid-template-rows:100px 500px 100px;
+  grid-template-areas:
+    "n1 n1 n1"
+    "n2 n3 n3"
+    "n4 n4 n4";
+  gap:40px;
+  padding:40px;
+  justify-content:center;
+  margin:auto;
+  color:white;
+}
+
+@font-face { /*Definimos el tipo de letra y la ruta*/
+  font-family:Tipografia1;
+  src:url("../fuentes/X360.ttf");
+}
+
+@font-face { /*Definimos el tipo de letra y la ruta*/
+  font-family:Tipografia2;
+  src:url("../fuentes/bookman1.ttf");
+}
+
+@font-face { /*Definimos el tipo de letra y la ruta*/
+  font-family:Tipografia3;
+  src:url("../fuentes/EnsconceSans.ttf");
+}
+
+@font-face { /*Definimos el tipo de letra y la ruta*/
+  font-family:Tipografia4;
+  src:url("../fuentes/TrajanPro-Regular.ttf");
+}
+
+#header{
+  /*Para los bordes*/
+  border-style:solid;
+  border-width:3px;
+  border-color:black;
+
+  /*Para redondear las esquinas*/
+  border-radius:20px;
+
+  /*Para el color de fondo desvanecido*/
+  background-image:linear-gradient(#fad59a,#20587c);
+
+  /*Para la sombra*/
+  box-shadow:10px 10px black;
+
+  font-family:Tipografia1;
+  font-size:20px;
+
+  /*Para posicionarlo*/
+  grid-area:n1;
+}
+
+#aside{
+  /*Para los bordes*/
+  border-style:solid;
+  border-width:3px;
+  border-color:black;
+
+  /*Para redondear las esquinas*/
+  border-radius:20px;
+
+  /*Para el color de fondo desvanecido*/
+  background-image:linear-gradient(#7e8282,#41aca7);
+
+  /*Para la sombra*/
+  box-shadow:10px 10px black;
+
+  font-family:Tipografia2;
+  font-size:30px;
+
+  /*Para posicionarlo*/
+  grid-area:n2;
+}
+
+#article{
+  background-color:#fbb04b;
+
+  /*Para los bordes*/
+  border-style:solid;
+  border-width:3px;
+  border-color:black;
+
+  /*Para redondear las esquinas*/
+  border-radius:20px;
+
+  /*Para el color de fondo desvanecido*/
+  background-image:linear-gradient(#fce9b7,#f8b80b);
+
+  /*Para la sombra*/
+  box-shadow:10px 10px black;
+
+  /* Para las imagenes de fondo */
+  background-image:url("../imagenes/joker.png"),
+  url("../imagenes/misprint.png"),
+  url("../imagenes/perkeo.png");
+  background-position: right bottom, center bottom, left bottom;
+  background-size: 200px 268px, 200px 268px, 200px 268px;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+
+  font-family:Tipografia3;
+  font-size:30px;
+
+
+
+  /*Para posicionarlo*/
+  grid-area:n3;
+}
+
+#footer{
+  /*Para los bordes*/
+  border-style:solid;
+  border-width:3px;
+  border-color:black;
+
+  /*Para redondear las esquinas*/
+  border-radius:20px;
+
+  /*Para el color de fondo desvanecido*/
+  background-image:linear-gradient(#f74f31,#e73927);
+
+  /*Para la sombra*/
+  box-shadow:10px 20px black;
+
+  font-family:Tipografia4;
+  font-size:20px;
+
+  /*Para posicionarlo*/
+  grid-area:n4;
+}

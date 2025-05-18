@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica de la sesión 15</title>
+  <script>
+    function ValidaFormulario2025a() {
+      const nombre = document.getElementById("nombreJosueMora").value.trim();
+      const tipo = document.getElementById("tipoMotoJosueMora").value;
+      const marcas = document.getElementsByName("marcaJosueMora");
+      const dia = document.getElementById("diaCompraJosueMora").value;
+      const mes = document.getElementById("mesCompraJosueMora").value;
+      const año = document.getElementById("anioCompraJosueMora").value;
+      const accesorios = document.getElementsByName("accesorioJosueMora");
+      const notas = document.getElementById("notasJosueMora").value.trim();
+
+      if (nombre === "") {
+        alert("Por favor, escribe el nombre del comprador.");
+        return false;
+      }
+
+      if (tipo === "") {
+        alert("Por favor, selecciona un tipo de motocicleta.");
+        return false;
+      }
+
+      let marcaSeleccionada = false;
+      for (let marca of marcas) {
+        if (marca.checked) {
+          marcaSeleccionada = true;
+          break;
+        }
+      }
+      if (!marcaSeleccionada) {
+        alert("Por favor, selecciona una marca de motocicleta.");
+        return false;
+      }
+
+      if (dia === "") {
+        alert("Por favor, selecciona un día.");
+        return false;
+      }
+      if (mes === "") {
+        alert("Por favor, selecciona un mes.");
+        return false;
+      }
+      if (año === "") {
+        alert("Por favor, selecciona un año.");
+        return false;
+      }
+
+      let accesoriosSeleccionados = false;
+      for (let acc of accesorios) {
+        if (acc.checked) {
+          accesoriosSeleccionados = true;
+          break;
+        }
+      }
+      if (!accesoriosSeleccionados) {
+        alert("Por favor, selecciona al menos un accesorio.");
+        return false;
+      }
+
+      if (notas === "") {
+        alert("Por favor, escribe una observación.");
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+<div>
+  <form action="graba_datos_claseWEB.php" method="post" id="formulario_clase15" onsubmit="return ValidaFormulario2025a();">
+    <fieldset>
+      <legend>Formulario de Venta de Motocicleta</legend>
+
+      <label for="nombreJosueMora">Nombre del comprador:</label>
+      <input type="text" name="nombreJosueMora" id="nombreJosueMora"><br><br>
+
+      <label for="tipoMotoJosueMora">Tipo de motocicleta:</label>
+      <select name="tipoMotoJosueMora" id="tipoMotoJosueMora">
+        <option value="">--- Selecciona un tipo ---</option>
+        <option value="pista">Moto de Pista</option>
+        <option value="ruta">Moto de Ruta</option>
+        <option value="cuatrimoto">Cuatrimoto</option>
+        <option value="carreras">Moto de Carreras</option>
+      </select><br><br>
+
+      <label>Marca:</label><br>
+      <input type="radio" name="marcaJosueMora" id="hondaJosueMora" value="Honda"> <label for="hondaJosueMora">Honda</label><br>
+      <input type="radio" name="marcaJosueMora" id="yamahaJosueMora" value="Yamaha"> <label for="yamahaJosueMora">Yamaha</label><br>
+      <input type="radio" name="marcaJosueMora" id="canamJosueMora" value="Can Am"> <label for="canamJosueMora">Can Am</label><br>
+      <input type="radio" name="marcaJosueMora" id="italikaJosueMora" value="Italika"> <label for="italikaJosueMora">Italika</label><br>
+      <input type="radio" name="marcaJosueMora" id="bmwJosueMora" value="BMW"> <label for="bmwJosueMora">BMW</label><br>
+      <input type="radio" name="marcaJosueMora" id="harleyJosueMora" value="Harley Davison"> <label for="harleyJosueMora">Harley Davison</label><br><br>
+
+      <label for="diaCompraJosueMora">Día:</label>
+      <select name="diaCompraJosueMora" id="diaCompraJosueMora">
+        <option value="">--- Selecciona el día ---</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+      </select>
+
+      <label for="mesCompraJosueMora">Mes:</label>
+      <select name="mesCompraJosueMora" id="mesCompraJosueMora">
+        <option value="">--- Selecciona el mes ---</option>
+        <option value="Enero">Enero</option>
+        <option value="Febrero">Febrero</option>
+        <option value="Marzo">Marzo</option>
+        <option value="Abril">Abril</option>
+        <option value="Mayo">Mayo</option>
+        <option value="Junio">Junio</option>
+        <option value="Julio">Julio</option>
+        <option value="Agosto">Agosto</option>
+        <option value="Septiembre">Septiembre</option>
+        <option value="Octubre">Octubre</option>
+        <option value="Noviembre">Noviembre</option>
+        <option value="Diciembre">Diciembre</option>
+      </select>
+
+      <label for="anioCompraJosueMora">Año:</label>
+      <select name="anioCompraJosueMora" id="anioCompraJosueMora">
+        <option value="">--- Selecciona el año ---</option>
+        <<option value="2000">2000</option>
+        <option value="2001">2001</option>
+        <option value="2002">2002</option>
+        <option value="2003">2003</option>
+        <option value="2004">2004</option>
+        <option value="2005">2005</option>
+        <option value="2006">2006</option>
+        <option value="2007">2007</option>
+        <option value="2008">2008</option>
+        <option value="2009">2009</option>
+        <option value="2010">2010</option>
+        <option value="2011">2011</option>
+        <option value="2012">2012</option>
+        <option value="2013">2013</option>
+        <option value="2014">2014</option>
+        <option value="2015">2015</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2025">2025</option>
+      </select><br><br>
+
+      <label>Accesorios:</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="cascoJosueMora" value="Casco"> <label for="cascoJosueMora">Casco</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="guantesJosueMora" value="Guantes"> <label for="guantesJosueMora">Guantes</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="winchJosueMora" value="Winch"> <label for="winchJosueMora">Winch</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="ledsJosueMora" value="Barra de leds"> <label for="ledsJosueMora">Barra de leds</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="chamarraJosueMora" value="Chamarra"> <label for="chamarraJosueMora">Chamarra</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="googlesJosueMora" value="Googles"> <label for="googlesJosueMora">Googles</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="botasJosueMora" value="Botas"> <label for="botasJosueMora">Botas</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="rinesJosueMora" value="Rines deportivos"> <label for="rinesJosueMora">Rines deportivos</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="pecheraJosueMora" value="Pechera"> <label for="pecheraJosueMora">Pechera</label><br>
+      <input type="checkbox" name="accesorioJosueMora" id="armaduraJosueMora" value="Armadura"> <label for="armaduraJosueMora">Armadura</label><br><br>
+
+      <input type="hidden" name="ocultoJosueMora" id="ocultoJosueMora" value="JosueMora"><br>
+
+      <label for="notasJosueMora">Observaciones:</label><br>
+      <textarea name="notasJosueMora" id="notasJosueMora" cols="50" rows="5"></textarea><br><br>
+
+      <input type="submit" value="Grabar esta informacion">
+      <input type="reset" value="Borrar esta informacion">
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>
